@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <header className="bg-blue-500 p-4" h>
+        <header className="bg-blue-500 p-4 h-5">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo */}
                 <div className="text-white text-xl font-bold">Your Logo</div>
