@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Header from '@/app/component/header'
-import FormComponent from './component/header/questionForm'
+import Header from '@/component/header'
+import FormComponent from '../component/header/questionForm'
 export default function Home() {
   return (
     <>
