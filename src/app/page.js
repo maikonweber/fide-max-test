@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import Header from '@/app/component/header/index'
-import FormComponent from './component/questionForm'
-import BreadCrumbs from './component/breadCrubms'
+import Header from '@/app/components/header/index'
+import FormComponent from './components/questionForm'
+import BreadCrumbs from './components/breadCrubms'
 
 
 
