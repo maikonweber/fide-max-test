@@ -5,7 +5,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 const Header = () => {
     return (
         <header className="bg-gray-900 p-4">
-            <div className="container  flex h-72px">                
+            <div className="container flex h-72px">                
            
             <div className="text-white text-2xl mr-5 p-1">
                     <FaBars />

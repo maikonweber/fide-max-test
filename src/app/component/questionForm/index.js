@@ -1,11 +1,12 @@
 const FormComponent = ({ answers }) => {
     return (
-        <div className="flex items-center justify-center h-screen">
+        <div className="flex flex-col items-center justify-center h-screen">
+            
+            <h2 className="text-2xl font-bold mb-4">Pesquisa de Satisfação</h2>
             <div className="bg-white p-8 shadow-md rounded-md">
-                <h2 className="text-2xl font-bold mb-4">Pesquisa de Satisfação</h2>
                 <form>
                     <div className="mb-4">
-                      {/* Answers */}  
+                      {/* Answers*/}  
                     </div>
                     <button type="submit" className="bg-blue-500 text-white m-2 p-2 rounded-md hover:bg-blue-600">Enviar Fake Post</button>
                     <button type="submit" className="bg-blue-500 text-white m-2 p-2 rounded-md hover:bg-blue-600">Enviar Erro </button>
