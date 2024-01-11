@@ -1,16 +1,27 @@
+import { FaBars } from 'react-icons/fa';
+import { Bs4CircleFill } from "react-icons/bs";
+import { AiFillCaretDown } from "react-icons/ai";
+
 const Header = () => {
     return (
-        <header className="bg-blue-500 p-4 h-5">
-            <div className="container mx-auto flex justify-between items-center">
-                {/* Logo */}
-                <div className="text-white text-xl font-bold">Your Logo</div>
-
+        <header className="bg-gray-900 p-4">
+            <div className="container  flex h-72px">                
+           
+            <div className="text-white text-2xl mr-5 p-1">
+                    <FaBars />
+                </div>
+                <div className="text-white text-2xl mr-1">SUA</div>
+                <div className="text-orange-500 text-2xl font-bold">LOGO</div>
                 {/* Navigation Links */}
-                <nav className="space-x-4">
-                    <a href="#" className="text-white">Home</a>
-                    <a href="#" className="text-white">About</a>
-                    <a href="#" className="text-white">Services</a>
-                    <a href="#" className="text-white">Contact</a>
+              
+                <nav className="ml-auto flex">
+                    <div className="text-gray-600 mr-4 p-1 text-2xl">
+                    <Bs4CircleFill />
+                    </div>
+                    <a href="#" className="text-white text-sm mr-1 p-1 font-light ">Fabio C Pinto</a>
+                    <div className="text-white ml-2 text-sm p-2">
+                    <AiFillCaretDown />
+                    </div>
                 </nav>
             </div>
         </header>
