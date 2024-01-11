@@ -10,16 +10,6 @@ const RenderQuestion = ({ typeQuestion, answerValue, mandatory, content, itens }
       <p>Mandatory: {mandatory.toString()}</p>
       <p>Content: {content}</p>
       <div>
-        <p>Itens:</p>
-        {Array.isArray(itens) ? (
-          <ul>
-            {itens.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-        ) : (
-          <p>{itens}</p>
-        )}
       </div>
     </div>
   );

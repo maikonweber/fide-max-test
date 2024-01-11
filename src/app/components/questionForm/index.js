@@ -1,4 +1,5 @@
 import RenderQuestion from "../questionSpace/questionSpace";
+import { v4 as uuidv4 } from 'uuid';
 
 const FormComponent = ({ data }) => {
     return (
@@ -9,7 +10,7 @@ const FormComponent = ({ data }) => {
                     <>
                     {data.itens.map((el, index) => {
                        return (<RenderQuestion 
-                        key={index}
+                        key={uuidv4()}
                         typeQuestion={el.typeQuestion} 
                         answerValue={el.answerValue} 
                         mandatory={el.mandatory} 
