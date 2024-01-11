@@ -15,19 +15,5 @@ const FormComponent = ({ answers }) => {
     );
 };
 
-export async function getServerSideProps() {
-    console.log("Get Server Side Trigger")
-    const response = await fetch('https://fdlmx-backgrounds.sfo3.digitaloceanspaces.com/front-test/survey.json',{
-        method: 'GET'
-    });
-    
-    const answers = await response.json();
-    
-    return {
-        props: {
-            answers
-        }
-    }
-}
 
 export default FormComponent;
