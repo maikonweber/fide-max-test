@@ -6,8 +6,8 @@ const FormComponent = ({ data }) => {
             <h2 className="text-2xl font-bold mb-4">Pesquisa de Satisfação</h2>
             <div className="bg-white p-8 shadow-md rounded-md"> 
                 <form>
-                    {data.itens.forEach((el, index) => {
-                        return <RenderQuestion 
+                    {data.itens.map((el, index) => {
+                        <RenderQuestion 
                         key={index}
                         typeQuestion={el.typeQuestion} 
                         answerValue={el.answerValue} 

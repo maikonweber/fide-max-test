@@ -2,7 +2,7 @@
 import React from 'react';
 
 const RenderQuestion = ({ typeQuestion, answerValue, mandatory, content, itens }) => {
-  console.log(typeQuestion, answerValue, mandatory, content, itens,"render")
+  console.log(typeQuestion)
   return (
     <div>
       {typeQuestion}
