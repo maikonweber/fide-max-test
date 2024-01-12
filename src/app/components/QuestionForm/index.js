@@ -1,11 +1,12 @@
+
 import RenderQuestion from "../QuestionSpace";
 import { v4 as uuidv4 } from 'uuid';
 
 const FormComponent = ({ data }) => {
-    console.log(data)
+    
     return (
         <div className="flex flex-col items-center justify-start h-screen">
-            <h2 className="text-2xl font-bold mb-4">Pesquisa de Satisfação</h2>
+            <h2 className="text-3xl font-bold mb-4">Pesquisa de Satisfação</h2>
             <div className="bg-white p-8 shadow-md rounded-md"> 
                 <div>
                     <>
