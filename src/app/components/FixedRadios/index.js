@@ -10,10 +10,12 @@ const FixedRadios = ({answerValue, mandatory, content}) => {
     
       return (
         <div className="max-w-lg mx-auto flex flex-col items-start justify-center mb-4"> 
-          <p>{content}</p>
-          {/* Mapear os valores fixos de 1 a 10 para criar os rádios */}
+          <h2 className='font-bold text-2xl mb-4'> Titulo da pegunta fica  aqui  </h2>
+          <p className='mb-4'>{content}</p>
+          <div className="flex flex-row">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value) => (
-            <label key={value}>
+           
+           <label key={value} className='mr-10 flex flex-col'>
               <input
                 type="radio"
                 value={value}
@@ -22,7 +24,9 @@ const FixedRadios = ({answerValue, mandatory, content}) => {
               />
               {value}
             </label>
+          
           ))}
+          </div>
         </div>
       );
 }

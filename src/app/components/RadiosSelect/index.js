@@ -1,9 +1,8 @@
-'use client'
 import React, { useState } from 'react';
 
 const RadiosSelect = ({ answerValue, content, mandatory, options }) => {
   const [selectedOption, setSelectedOption] = useState('');
-  
+
   const handleRadioChange = (event) => {
     const selectedValue = event.target.value;
     setSelectedOption(selectedValue);
@@ -13,11 +12,11 @@ const RadiosSelect = ({ answerValue, content, mandatory, options }) => {
     <div>
       <p>{content}</p>
       {options.map((option) => (
-        <label key={option}>
+        <label key={option.description}>
           <input
             type="radio"
-            value={option}
-            checked={selectedOption === option}
+            value={option.description}
+            checked={selectedOption === option.description}
             onChange={handleRadioChange}
           />
           {option.description}
@@ -29,3 +28,4 @@ const RadiosSelect = ({ answerValue, content, mandatory, options }) => {
 };
 
 export default RadiosSelect;
+

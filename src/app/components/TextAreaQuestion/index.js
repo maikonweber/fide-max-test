@@ -9,8 +9,8 @@ const TextAreaQuestion = ({answerValue, mandatory, content }) => {
     
       return (
         <div>
-          <p>{content}</p>
-          <input
+          <p className='font-bold mb-4'>{content}</p>
+          <textarea className="w-full h-32 p-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 resize-none"
             type="text"
             value={answer}
             onChange={handleTextChange}

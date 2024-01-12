@@ -1,9 +1,9 @@
+'use client'
 import React, { useState } from 'react';
 
 const MultipleSelect = ({ value, mandatory, content, options }) => {
-  // Função para lidar com a mudança de valor das caixas de seleção
-  const [answerValue, setAnswerValue] = useState([])
-  
+  const [answerValue, setAnswerValue] = useState([]);
+
   const handleCheckboxChange = (option) => {
     const updatedValues = answerValue.includes(option)
       ? answerValue.filter((value) => value !== option)
@@ -15,12 +15,12 @@ const MultipleSelect = ({ value, mandatory, content, options }) => {
     <div>
       <p>{content}</p>
       {options.map((option) => (
-        <label key={option}>
+        <label key={option.description}>
           <input
             type="checkbox"
-            value={option}
-            checked={answerValue}
-            onChange={() => handleCheckboxChange(option)}
+            value={option.description}
+            checked={answerValue.includes(option.description)}
+            onChange={() => handleCheckboxChange(option.description)}
           />
           {option.description}
         </label>
