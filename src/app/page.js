@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import Header from '@/app/components/header/index'
-import FormComponent from './components/questionForm'
-import BreadCrumbs from './components/breadCrubms'
+import Header from './components/Header'
+import FormComponent from './components/QuestionForm'
+import BreadCrumbs from './components/BreadCrubms'
 
 async function getData() {
   const res = await fetch('https://fdlmx-backgrounds.sfo3.digitaloceanspaces.com/front-test/survey.json')
