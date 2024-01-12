@@ -17,7 +17,7 @@ const RenderQuestion = ({ typeQuestion, answerValue, mandatory, content, itens }
         mandatory={mandatory}
         content={content}
         rating={rating}
-        
+
       />
       );
     case 2:

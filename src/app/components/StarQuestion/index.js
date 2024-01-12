@@ -1,24 +1,23 @@
 'use client'
 import React, { useState } from 'react'
-
 const Star = ({ selected, onSelect }) => {
     return (
         <span
-            className={`cursor-pointer text-2xl ${selected ? 'text-yellow-500' : 'text-gray-300'
+            className={`cursor-pointer text-5xl ml-3 ${selected ? 'text-yellow-500' : 'text-gray-300'
                 }`}
             onClick={onSelect}
         >
-            
+            ★
         </span>
     );
 };
 
 const StarQuestion = ({ answerValue, mandatory, content, rating, setRating }) => {
-    const [selectedStars, setSelectedStars] = useState(0);
-
+    const [selectedStars, setSelectedStars] = useState(5);
+    console.log(answerValue, mandatory, content)
     const handleStarClick = (starIndex) => {
         setSelectedStars(starIndex + 1);
-        setRating(starIndex + 1); // Atualize a pontuação no componente pai, se necessário
+        // setRating(starIndex + 1); // Atualize a pontuação no componente pai, se necessário
     };
 
     const renderStars = () => {
@@ -35,12 +34,13 @@ const StarQuestion = ({ answerValue, mandatory, content, rating, setRating }) =>
         return stars;
     };
 
-    return <>
-        <div className="max-w-lg mx-auto flex flex-col item-center justifiy-center ">
-            <p>{content}</p>
-            <div className="ml-4">{renderStars()}</div>
+    return (
+        <div className="max-w-lg mx-auto flex flex-col items-start justify-center mb-4">
+            <h2 className='mb-4 font-bold text-2xl'> Titulo da pegunta fica  aqui  </h2>
+            <p className="mb-2">{content}</p>
+            <div className="">{renderStars()}</div>
         </div>
-    </>
+    );
 }
 
-export default StarQuestion
+export default StarQuestion;
