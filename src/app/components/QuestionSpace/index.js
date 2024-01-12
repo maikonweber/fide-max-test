@@ -7,6 +7,7 @@ import TextAreaQuestion from '../TextAreaQuestion';
 import UniqueSelect from '../UniqueSelect';
 import MultipleSelect from '../MultipleSelect';
 import RadiosSelect from '../RadiosSelect';
+import { RSC_CONTENT_TYPE_HEADER } from 'next/dist/client/components/app-router-headers';
 const RenderQuestion = ({ typeQuestion, answerValue, mandatory, content, itens }) => {
   const [rating, setRating] = useState(0);
 
@@ -26,50 +27,37 @@ const RenderQuestion = ({ typeQuestion, answerValue, mandatory, content, itens }
         mandatory={mandatory}
         content={content}
       />)
-    //     <div>
-    //       <p>{content}</p>
-    //       {/* Implemente a lógica para renderizar perguntas com rádios de 1 a 10 aqui */}
-    //     </div>
-
     case 3:
       return (
         <TextAreaQuestion
           answerValue={answerValue}
-        >
-
-        </TextAreaQuestion>
+          content={content}
+        />
       );
     case 4:
-      return (<UniqueSelect>
-
-      </UniqueSelect>)
+      console.log(typeQuestion, answerValue, mandatory, content, itens)
+      return (<UniqueSelect
+        answerValue={answerValue}
+        mandatory={mandatory}
+        content={content}
+        options={itens}
+      />)
     case 5:
-      return (<RadiosSelect>
-
-      </RadiosSelect>)
+      console.log(typeQuestion, answerValue, mandatory, content, itens)
+      return (<RadiosSelect
+        answerValue={answerValue}
+        content={content}
+        mandatory={mandatory}
+        options={itens}
+      />)
     case 6:
-      return <MultipleSelect>
-        
-      </MultipleSelect>
-    // <div>
-    //       <p>{content}</p>
-    //       {/* Implemente a lógica para renderizar perguntas de seleção única tipo select aqui */}
-    //     </div>
-    //   );
-    // case 5:
-    //   return (
-    //     <div>
-    //       <p>{content}</p>
-    //       {/* Implemente a lógica para renderizar perguntas de seleção única tipo radio aqui */}
-    //     </div>
-    //   );
-    // case 6:
-    //   return (
-    //     <div>
-    //       <p>{content}</p>
-    //       {/* Implemente a lógica para renderizar perguntas de seleção múltipla aqui */}
-    //     </div>
-    //   );
+      console.log(typeQuestion, answerValue, mandatory, content, itens)
+      return <MultipleSelect
+        answerValue={answerValue}
+        mandatory={mandatory}
+        content={content}
+        options={itens}
+      />
     default:
       return null;
   }
