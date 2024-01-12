@@ -5,8 +5,8 @@ import { v4 as uuidv4 } from 'uuid';
 const FormComponent = ({ data }) => {
     
     return (
-        <div className="flex flex-col items-center justify-start h-screen">
-            <h2 className="text-3xl font-bold mb-4">Pesquisa de Satisfação</h2>
+        <div className="flex flex-col items-center justify-start h-screen relative bottom-32 ">
+            <h2 className="text-white text-3xl font-bold mb-4 mr-52">Pesquisa de Satisfação</h2>
             <div className="bg-white p-8 shadow-md rounded-md"> 
                 <div>
                     <>

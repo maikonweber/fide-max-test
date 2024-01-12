@@ -7,7 +7,7 @@ import TextAreaQuestion from '../TextAreaQuestion';
 import UniqueSelect from '../UniqueSelect';
 import MultipleSelect from '../MultipleSelect';
 import RadiosSelect from '../RadiosSelect';
-import { RSC_CONTENT_TYPE_HEADER } from 'next/dist/client/components/app-router-headers';
+
 const RenderQuestion = ({ typeQuestion, answerValue, mandatory, content, itens }) => {
   const [rating, setRating] = useState(0);
 
