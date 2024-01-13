@@ -6,7 +6,7 @@ const FormComponent = ({ data }) => {
     
     return (
         <div className="flex flex-col items-center justify-start h-screen relative bottom-32 ">
-            <h2 className="text-white text-3xl font-bold mb-4 mr-52">Pesquisa de Satisfação</h2>
+            <h2 className="text-white text-3xl font-bold mb-4 md:mr-52">Pesquisa de Satisfação</h2>
             <div className="bg-white w-screen md:w-auto p-8 shadow-md rounded-md"> 
                 <div>
                     <>
