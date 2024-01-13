@@ -10,14 +10,15 @@ const RadiosSelect = ({ answerValue, content, mandatory, options }) => {
 
   return (
     <div>
-      <p>{content}</p>
+      <p className='font-bold'>{content}</p>
       {options.map((option) => (
-        <label key={option.description}>
+        <label className="flex-row mr-4" key={option.description}>
           <input
             type="radio"
             value={option.description}
             checked={selectedOption === option.description}
             onChange={handleRadioChange}
+            className="mr-2 mb-4"
           />
           {option.description}
         </label>
