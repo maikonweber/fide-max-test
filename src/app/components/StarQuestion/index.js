@@ -14,7 +14,7 @@ const Star = ({ selected, onSelect }) => {
 
 const StarQuestion = ({ answerValue, mandatory, content, rating, setRating }) => {
     const [selectedStars, setSelectedStars] = useState(5);
-    console.log(answerValue, mandatory, content)
+  
     const handleStarClick = (starIndex) => {
         setSelectedStars(starIndex + 1);
         // setRating(starIndex + 1); // Atualize a pontuação no componente pai, se necessário
