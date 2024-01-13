@@ -35,7 +35,7 @@ const RenderQuestion = ({ typeQuestion, answerValue, mandatory, content, itens }
         />
       );
     case 4:
-      console.log(typeQuestion, answerValue, mandatory, content, itens)
+      
       return (<UniqueSelect
         answerValue={answerValue}
         mandatory={mandatory}
@@ -43,7 +43,7 @@ const RenderQuestion = ({ typeQuestion, answerValue, mandatory, content, itens }
         options={itens}
       />)
     case 5:
-      console.log(typeQuestion, answerValue, mandatory, content, itens)
+     
       return (<RadiosSelect
         answerValue={answerValue}
         content={content}
@@ -51,7 +51,7 @@ const RenderQuestion = ({ typeQuestion, answerValue, mandatory, content, itens }
         options={itens}
       />)
     case 6:
-      console.log(typeQuestion, answerValue, mandatory, content, itens)
+ 
       return <MultipleSelect
         answerValue={answerValue}
         mandatory={mandatory}
