@@ -14,7 +14,7 @@ const Header = () => {
                 <div className="text-orange-500 text-2xl font-bold">LOGO</div>
                 {/* Navigation Links */}
               
-                <nav className="ml-auto flex">
+                <nav className="ml-auto lg:ml-auto lg:relative lg:left-40 flex">
                     <div className="text-gray-600 mr-4 p-1 text-2xl">
                     <Bs4CircleFill />
                     </div>

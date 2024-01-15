@@ -17,7 +17,7 @@ const MultipleSelect = ({ value, mandatory, content, options }) => {
       {options.map((option) => (
         <label
          key={option.description}
-         className={`flex-row border rounded-3xl p-2 mr-2 mb-8 cursor-pointer ${
+         className={`flex-col md:flex-row border rounded-3xl mr-0.5 p-0.5 md:p-2 md:mr-2 md:mb-8 cursor-pointer ${
           answerValue.includes(option.description) ? 'bg-blue-500 text-white' : ''
         }`}
          >

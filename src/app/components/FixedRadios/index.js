@@ -15,7 +15,7 @@ const FixedRadios = ({answerValue, mandatory, content}) => {
           <div className="flex flex-row">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value) => (
            
-           <label key={value} className='mr-10 flex flex-col'>
+           <label key={value} className='mr-1 md:mr-10 flex flex-col'>
               <input
                 type="radio"
                 value={value}
